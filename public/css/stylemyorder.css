@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(117, 133, 133);
+}
+
+.content-box{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.title{
+    margin-top: 150px;
+    font-weight: bolder;
+}

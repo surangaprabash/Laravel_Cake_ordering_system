@@ -1,0 +1,8 @@
+.bgimg{
+    background-size: cover;
+    min-height: 60vh;
+}
+
+body{
+    background-color: rgb(124, 143, 143);
+}

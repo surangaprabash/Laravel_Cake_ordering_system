@@ -1,0 +1,133 @@
+body{
+    background-color: #666777;
+}
+.navbar {
+    background-color: #ffffff;
+    height: 70px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.order-button {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: #00b383;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px 30px 50px 30px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: #c44e1b;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+
+@media (min-width: 991px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section{
+    background: url(/images/img-1.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 1.5em;
+}
+
+.hero-section h2 {
+    font-size: 1.2em;
+}

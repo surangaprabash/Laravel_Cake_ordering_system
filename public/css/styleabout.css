@@ -1,0 +1,25 @@
+body {
+    background-image: url('/images/aboutback.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  .h2 {
+    margin-top: 100px;
+    font-weight: bold;
+    text-align:center;
+    font-family: verdana;
+    font-size: 300%;
+    color:white;
+  }
+  
+  p {text-align:center;
+  font-family: verdana;
+  font-style: italic;
+  color:white;
+  }
+
+  .button {
+    margin-top: 20px;
+    text-align:center;
+  }

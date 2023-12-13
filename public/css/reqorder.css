@@ -1,0 +1,211 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    background: #c3b9b9;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.side-image{
+    background-image: url("/images/cake01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:  0 30px 30px 0;
+    position: relative;
+}
+.order_row{
+  margin: 20px 100px 20px 100px;
+  width:  900px;
+  height:550px;
+  border-radius: 30px;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 20px; 
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-box{
+  width: 330px;
+  box-sizing: border-box;
+}
+img{
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.long{
+    height: 60px;
+    border: 1px solid;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field input:focus ~ label,.input-field textarea:focus ~ label
+   {
+    top: -10px;
+    font-size: 13px;
+  }
+  .input-field input:valid ~ label,  .input-field textarea:valid ~ label
+  {
+   top: -10px;
+   font-size: 13px;
+   color: #5d5076;
+ }
+ .input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+ }
+ .submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+ }
+ .submit:hover{
+    background: rgba(37, 95, 156, 0.937);
+    color: #fff;
+ }
+ .signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.popup-container {
+    display: none;  
+    /* display: flex; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.popup {
+    background: #fff;
+    width: 550px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-wrapper{
+    background: #c3b9b9;
+    padding: 0 20px 0 20px;
+    border-radius: 20px;
+}
+
+.popupmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.close-btn {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.sub-button {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 350px;
+}
+
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 30px 30px 0 0;
+        visibility: hidden;
+    }
+    img{
+        visibility: hidden;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p, i{
+        font-size: 16px;
+    }
+    .order_row{
+        max-width:420px;
+        height: 520px;
+        width: 100%;
+    }
+}
