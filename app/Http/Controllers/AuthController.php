@@ -69,7 +69,7 @@ class AuthController extends Controller
             return redirect('/');
         }
         
-        return redirect()->route('register')->with('error', 'Account not Create.');
+        return redirect()->route('register')->with('error', 'Account not Create. try again');
     }
 
     public function home(){

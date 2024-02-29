@@ -19,7 +19,7 @@
                             <a id="act2" class="nav-link mx-lg-2" aria-current="page" href="{{url('admin')}}">Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a id="act3" class="nav-link mx-lg-2" href="{{url('contact')}}">Contact</a>
+                            <a id="act3" class="nav-link mx-lg-2" href="{{url('home')}}">Home</a>
                         </li>
                     </ul>
                 </div>

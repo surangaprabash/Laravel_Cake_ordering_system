@@ -19,49 +19,49 @@
                 
                 <img src="/images/Bakery-Logo.png" alt="">
                 <div class="text">
-                    <p>Join the community of developers <i>- ludiflex</i></p>
+                    <p>Join and Order a cake</p>
                 </div>
                 
             </div>
 
-            <div class="col-md-6 right">
+            <div class="col-md-6 right mt-4 mb-4">
                 
                 <div class="input-box">
                    
                     <header class="h2">Register</header>
 
-                    @if(session()->has('success'))
+                    <!-- @if(session()->has('success'))
                         <div class="alert alert-success">
                             {{ session()->get('success') }}
                         </div>
-                    @endif
+                    @endif -->
 
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
                                 @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
+                                    <strong><li>{{ $error }}</li></strong>
                                 @endforeach
                             </ul>
                         </div>
-                    @endif
-
-                    @if(session()->has('error'))
+                    @elseif(session()->has('error'))
                         <div class="alert alert-danger">
                             {{ session()->get('error') }}
                         </div>
+   
                     @endif
+                    
 
                    <form action="{{ route('register') }}" method="post">
                     @csrf
                     @method('post')
 
                     <div class="input-field">
-                            <input type="text" class="input" name="name" id="name" autocomplete="off">
+                            <input type="text" class="input" name="name" id="name">
                             <label for="name">Name</label> 
                         </div>
                     <div class="input-field">
-                            <input type="text" class="input" name="email" id="email" autocomplete="off">
+                            <input type="text" class="input" name="email" id="email">
                             <label for="email">Email</label> 
                         </div> 
                     <div class="input-field">
@@ -85,6 +85,21 @@
         </div>
     </div>
 </div>
+<!-- @if ($errors->has('email'))
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var emailInput = document.getElementById('email');
+        
+        // Check if there are errors for the 'email' field
+        
+            emailInput.placeholder = 'Email is required';
+            emailInput.style.fontWeight = 'bold';
+        
+    });
+</script>
+
+@endif -->
+
 <script src="/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
 <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 <script src="/jQuery/jQuery.js"></script>

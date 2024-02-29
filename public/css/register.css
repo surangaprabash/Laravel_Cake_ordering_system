@@ -24,7 +24,7 @@
 }
 .row{
   width:  900px;
-  height:450px;
+  height: auto;
   border-radius: 30px;
   background: #fff;
   padding: 0px;

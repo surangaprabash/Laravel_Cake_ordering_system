@@ -20,9 +20,9 @@
                        
                 <!-------------      image     ------------->
                 
-                <img src="/images/cake0.jpg" alt="">
+                <img src="/images/Bakery-Logo.png" alt="">
                 <div class="text">
-                    <p>Join the community of developers <i>- ludiflex</i></p>
+                    <p>Join and Order a cake</p>
                 </div>
                 
             </div>

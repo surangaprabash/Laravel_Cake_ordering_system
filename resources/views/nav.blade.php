@@ -41,16 +41,19 @@
            
             <div class="dropdown profile">
                 <h3 class="h3 me-2">{{ Auth::user()->name}}</h3>
-                <div class="container dropdown-content">
-                    <div class="row">
-                        <div class="col-12">
-                        <a href="{{url('profile')}}" class="link">Profile</a><br>
-                        
-                        </div>
-                        <div class="col-12">
-                        <a href="{{route('logout')}}" class="link">LogOut</a>
-                
-                        </div>
+
+                <div class="container px-4 dropdown-content">
+                    <div class="row gx-5">
+                        <a href="{{route('profile')}}" class="link">
+                            <div class="col">
+                                <div class="p-3">Profile</div>
+                            </div>
+                        </a>
+                        <a href="{{route('logout')}}" class="link">
+                            <div class="col">
+                                <div class="p-3">LogOut</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
