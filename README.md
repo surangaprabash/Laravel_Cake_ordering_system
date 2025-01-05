@@ -1,3 +1,6 @@
+# Laravel_Cake_ordering_system
+Complete project with ordering system, order management, admin panel
+
 This is simple cake ordering system powered by laravel
 following below instruction to run the project.
 Developed By IAD Group 11
